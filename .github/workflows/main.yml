@@ -18,11 +18,7 @@ jobs:
       - name: Build with Gradle
         uses: gradle/gradle-build-action@v2
         with:
-          arguments:
-            - build
-            - test
-            - report
-
+          arguments: install
           #build-root-directory: fastSortTraining
 
       - name: Publish code coverage
