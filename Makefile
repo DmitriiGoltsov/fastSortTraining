@@ -10,10 +10,7 @@ install:
 	./gradlew clean install
 
 run-dist:
-	./build/install/app/bin/app $(PATH1) $(PATH2)
-
-run-distW:
-	./build/install/app/bin/app $(PATH1) $(PATH3)
+	./build/install/app/bin/fastSortTraining
 
 run:
 	./gradlew run
@@ -21,7 +18,7 @@ run:
 test:
 	./gradlew test
 
-report:
+report: test
 	./gradlew jacocoTestReport
 
 lint:
