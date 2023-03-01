@@ -53,6 +53,7 @@ public class Solution {
                 while (numbers.get(right) < pivot) {
                     right--;
                 }
+
             } else {
 
                 while (numbers.get(left) < pivot) {
@@ -76,15 +77,5 @@ public class Solution {
             right--;
 
         }
-    }
-
-    public static void main(String[] args) {
-
-        List<Integer> listToSort = List.of();
-
-        List<Integer> sortedList = run(listToSort, "desc");
-
-        System.out.println(sortedList);
-
     }
 }
